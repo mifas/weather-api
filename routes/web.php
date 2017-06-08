@@ -11,6 +11,5 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
+$app->get('/', 'WeatherController@index');
+$app->get('weather/current', 'WeatherController@current');
