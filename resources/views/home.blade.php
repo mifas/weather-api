@@ -40,13 +40,14 @@
         <div class="col-md-6" style="margin:0 auto">
             <div class="form-group">
                 <input type="text" class="form-control" name="" value="" id="city" aria-describedby="helpId"
-                       placeholder="Enter your city and hit Enter">
-                <small id="helpId" class="form-text text-muted">Sri Lanka city only!</small>
+                       placeholder="Enter your city and hit enter">
+                <small id="helpId" class="form-text text-muted">Sri Lanka cities only!</small>
             </div>
         </div>
     </div>
 
     <div class="weather-result is-loading">
+        <hr>
         <div v-if="error.message">
             <div class="alert alert-danger">@{{error.message}}</div>
         </div>
