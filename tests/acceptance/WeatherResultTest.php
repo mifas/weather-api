@@ -22,7 +22,7 @@ class WeatherResultTest extends TestCase
     {
         $response = $this->call('GET', '/');
         $this->assertResponseStatus(200);
-        $this->assertContains('Wind', $response->content());
+        $this->assertContains('Weather API', $response->content());
     }
 
     /**
